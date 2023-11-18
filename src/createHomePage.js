@@ -1,5 +1,6 @@
 export function createHomePage() {
 
+    console.log('Contact');
     const contentContainer = document.querySelector('#content');
 
     const content = () => {
