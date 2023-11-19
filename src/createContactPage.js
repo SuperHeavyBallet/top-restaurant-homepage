@@ -9,17 +9,31 @@ export function createContactPage() {
         mainContent.id = 'main-content';
         contentContainer.appendChild(mainContent);
 
-        const image = document.createElement('img');
+
+
         const title = document.createElement('h2');
+        title.classList.add('content-title');
+        title.textContent = 'Contact Us!'
+
         const paragraph = document.createElement('p');
+        paragraph.classList.add('content-text');
+        paragraph.textContent = 'You can find us on the corner of 53rd and 2nd Street, New Gawk!';
 
-        image.src = '/src/img/spaghetti.jpg';
-        title.textContent = 'The most wonderful restaurant ever!'
-        paragraph.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ea dicta aliquid autem rem, magnam similique eum dolore nemo in eveniet esse labore consectetur? Laudantium quibusdam debitis deserunt nam ratione!';
+        const paragraph1 = document.createElement('p');
+        paragraph1.classList.add('content-text');
+        paragraph1.textContent = '2, 53 West Bowling, New Gawk, NUS';
 
-        mainContent.appendChild(image);
+        const paragraph2 = document.createElement('p');
+        paragraph2.classList.add('content-text');
+        paragraph2.textContent = '01-68955-257';
+   
+        
         mainContent.appendChild(title);
+        
         mainContent.appendChild(paragraph);
+        mainContent.appendChild(paragraph1);
+        mainContent.appendChild(paragraph2);
+   
     };
 
     content();

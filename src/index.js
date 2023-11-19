@@ -7,10 +7,7 @@ import { removeContent } from './removeContent';
 
 
 
-//create modules for 
-// - Home Page
-// - Menu Page
-// - Content Page
+
 
 
 createNavBar();
@@ -31,7 +28,10 @@ navBarButtons.forEach((button) => {
         {
             removeContent();
             console.log('click menu');
-            createMenuPage();
+            createMenuPage(
+                ['Spaghetti Bolognese', 'Pizza', 'Burger', 'Sandwich', 'Salad'],
+                ['/src/img/spaghetti.jpg', '/src/img/pizza.jpg', '/src/img/burger.jpg', '/src/img/sandwich.jpg', '/src/img/salad.jpg']
+                );
             
         }
         else if (button.id === 'contact-button')

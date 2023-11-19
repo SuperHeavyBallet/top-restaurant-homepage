@@ -30,11 +30,28 @@
     padding-right: 10vw;
 }
 
-#main-content>img{
+.content-image{
     max-width: 60vw;
 }
 
-#main-content>h2{
+.content-title{
     padding-top: 1vh;
     padding-bottom: 1vh;
+}
+
+.content-text{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    max-width: 60vw;
+}
+
+
+.recipe-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vh 1vw;
+    
+    margin-bottom: 4vh;
+    
 }
